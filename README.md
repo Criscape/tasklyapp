@@ -1,6 +1,6 @@
 # Taskly App
 
-Application for manage a list of tasks, for productivity purposes. This repository is the back-end server, the front-end server can be found here: [Taskly App Front].
+Application to manage a list of tasks, for productivity purposes. This repository is the back-end server, the front-end server can be found here: [Taskly App Front].
 
 [Taskly App Front]: <https://github.com/Criscape/tasklyapp-front>
 
@@ -20,7 +20,7 @@ First of all you have to clone this project in your personal computer. To execut
 
 Also, you need the mongo user password to connect the back-end application with the database, once you have the password, create an environment variable called TASKLY_PSW.
 
-To create an temporal environment variable on Ubuntu, you can use:
+To create a temporal environment variable on Ubuntu, you can use:
 
 ```sh
 $ export TASKLY_PSW=<password>
@@ -40,7 +40,7 @@ By default the server runs on port 3000, if you change this, you need to change 
 
 This application was developed on Angular 9, so you need this version or greater to execute the server without problems.
 
-First of all, clone the project, repository here: [Taskly App Front].
+First of all clone the project, repository here: [Taskly App Front].
 
 Install all the packages needed:
 
