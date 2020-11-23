@@ -26,3 +26,14 @@ taskRouter.delete('/delete/:_id', async (req: any, res: any) => {
     const taskRes = await controller.deleteTask(_id);
     return taskRes ? res.json({ ans: 'Done' }) : res.json({ ans: 'Error' });
 });
+
+taskRouter.put('/update', async (req: any, res: any) => {
+    const body = req.body;
+    const taskRes = await controller.updateTask(
+        body._id,
+        body.userId,
+        body.stateId,
+        body.description
+    );
+    return taskRes ? res.json({ ans: 'Done' }) : res.json({ ans: 'Error' });
+});

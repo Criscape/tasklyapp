@@ -33,4 +33,20 @@ export class TaskController {
         });
         return result.deletedCount ? 1 : 0;
     }
+
+    async updateTask (
+        _id: String,
+        userId: String,
+        stateId: String,
+        description: String
+    ): Promise<Number> {
+        const result = await Task.updateOne({
+            _id: _id
+        }, {
+            userId: userId,
+            stateId: stateId,
+            description: description
+        });
+        return !result[0] ? 1 : 0;
+    }
 }
