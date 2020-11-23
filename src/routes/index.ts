@@ -1,13 +1,15 @@
 import { Router } from 'express';
-// import UserRouter from './Users';
-// import AuthRouter from './Auth';
+import { stateRouter } from './State';
+import { taskRouter } from './Task';
+import { userRouter } from './User';
 
 // Init router and path
 const router = Router();
 
 // Add sub-routes
-// router.use('/users', UserRouter);
-// router.use('/auth', AuthRouter);
+router.use('/users', userRouter);
+router.use('/tasks', taskRouter);
+router.use('/states', stateRouter);
 
 // Export the base-router
 export default router;
